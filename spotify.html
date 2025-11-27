@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify- Web Player:Music For Everyone</title>
+  <link rel="stylesheet" href="spotify.css">
+  <link rel="stylesheet" href="utility.css">
+</head>
+
+<body>
+  <!-- Entire WebPage Divides Into two Div -Left and right -->
+  <div class="container flex bg-black">
+    <!-- left part  -->
+    <div class="left">
+
+      <!-- For Responsiveness -->
+      <div class="close">
+        <img width="30" class="invert" src="img/close.svg" alt="">
+      </div>
+      <!-- Left Divides into two Div-Home and library -->
+      <div class="home bg-gray rounded m-1 p-1">
+        <div class="logo">
+          <img width=100 class="invert" src="img/logo.svg" alt="logo">
+        </div>
+      </div>
+
+      <div class="library  bg-gray rounded m-1 p-1">
+        <!-- library div Divides into 2 div - Heading and songlist -->
+
+        <div class="heading">
+          <img class="invert" src="img/playlist.svg" alt="playlist">
+          <h2>
+            Your library
+          </h2>
+          <div class="plus"><img class="invert" src="img/plus.svg" alt="playlist"></div>
+        </div>
+
+        <div class="songlist">
+          <ul></ul>
+        </div>
+      </div>
+
+      <!-- left div footer -->
+
+      <div class="footer">
+        <div><a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a></div>
+        <div><a href="https://www.spotify.com/jp/privacy/"><span>Privacy Center</span></a></div>
+        <div><a href="https://www.spotify.com/jp/legal/privacy-policy/"><span>Privacy Policy</span></a></div>
+        <div><a href="https://www.spotify.com/jp/legal/cookies-policy/"><span>Cookies</span></a></div>
+        <div><a href="https://www.spotify.com/jp/legal/privacy-policy/#s3"><span>About Ads</span></a></div>
+        <div><a href="https://www.spotify.com/jp/accessibility/"><span>Accessibility</span></a></div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Right part -->
+
+  <div class="right bg-gray rounded">
+    <!-- Right div Dividesinto two div- header and spotifyplaylists -->
+    <div class="header">
+
+      <!-- header Dividesinto 2 div - nav and button -->
+
+      <div class="nav">
+
+        <div class="hamburger_container">
+          <img width="30px" class="invert hamburger" src="img/hamburger .svg" alt="">
+        </div>
+        <img width="35" class="invert" src="img/home.svg" alt="home">
+
+        <!-- SEARCH BAR (new) -->
+        <div class="search-bar">
+          <span class="search-icon">
+            <img src="img/search.svg" alt="">
+          </span>
+          <input type="text" placeholder="What do you want to play?">
+        </div>
+      </div>
+
+      <div class="buttons">
+        <button class="signupbtn">Sign Up</button>
+        <button class="loginbtn">Log In</button>
+      </div>
+    </div>
+
+    <!-- spotifyplaylists div -->
+
+    <div class="spotifyplaylists">
+      <h2>Spotify Playlists</h2>
+      <div class="cardcontainer">
+        <div data-folder="Fav_Songs" class="card">
+          <div class="play">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" role="img"
+              aria-label="Play">
+              <title>Play</title>
+              <circle cx="12" cy="12" r="11" fill="#1DB954" />
+              <polygon points="9,7 9,17 17,12" fill="#000000" />
+            </svg>
+          </div>
+          <img src="img/fav.jpeg" alt="happy mood">
+          <h2>Your Best Beats!</h2>
+          <p>Your daily soundtrack — made just for you!</p>
+        </div>
+      </div>
+
+      <h2>Popular Artists</h2>
+      <div class="cardcontainer">
+
+        <div data-folder="Arijit_Singh" class="card">
+          <div class="play">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" role="img"
+              aria-label="Play">
+              <title>Play</title>
+              <circle cx="12" cy="12" r="11" fill="#1DB954" />
+              <polygon points="9,7 9,17 17,12" fill="#000000" />
+            </svg>
+          </div>
+          <img src="img/arjitt.jpeg" alt="happy mood">
+          <h2>Arijit Singh</h2>
+          <p>Soulful melodies that touch your heart!</p>
+        </div>
+
+
+        <div data-folder="Armaan_Malik" class="card">
+          <div class="play">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" role="img"
+              aria-label="Play">
+              <title>Play</title>
+              <circle cx="12" cy="12" r="11" fill="#1DB954" />
+              <polygon points="9,7 9,17 17,12" fill="#000000" />
+            </svg>
+          </div>
+          <img src="img/araman.jpg" alt="happy mood">
+          <h2>Armaan Malik</h2>
+          <p>Fresh, feel-good pop vibes for every mood!</p>
+        </div>
+        <div data-folder="Shreya_Ghoshal" class="card">
+          <div class="play">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" role="img"
+              aria-label="Play">
+              <title>Play</title>
+              <circle cx="12" cy="12" r="11" fill="#1DB954" />
+              <polygon points="9,7 9,17 17,12" fill="#000000" />
+            </svg>
+          </div>
+          <img src="img/SHREYA.jpeg" alt="happy mood">
+          <h2>Shreya Ghoshal</h2>
+          <p>Magical vocals that bring every emotion to life!</p>
+        </div>
+        <div data-folder="Atif_Aslam" class="card">
+          <div class="play">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" role="img"
+              aria-label="Play">
+              <title>Play</title>
+              <circle cx="12" cy="12" r="11" fill="#1DB954" />
+              <polygon points="9,7 9,17 17,12" fill="#000000" />
+            </svg>
+          </div>
+          <img src="img/atif-aslam.jpg" alt="happy mood">
+          <h2>Atif Aslam</h2>
+          <p>Powerful voice with timeless romantic hits!</p>
+        </div>
+
+
+
+      </div>
+
+      <h2>Trending Songs</h2>
+      <div class="cardcontainer">
+
+        <div data-folder="Dooron_Dooron" class="card">
+          <div class="play">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" role="img"
+              aria-label="Play">
+              <title>Play</title>
+              <circle cx="12" cy="12" r="11" fill="#1DB954" />
+              <polygon points="9,7 9,17 17,12" fill="#000000" />
+            </svg>
+          </div>
+          <img src="img/dooron.jpeg" alt="happy mood">
+          <h2>Happy Hits!</h2>
+          <p>A soulful track to calm your heart!</p>
+        </div>
+
+        <div data-folder="Fakira" class="card">
+          <div class="play">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" role="img"
+              aria-label="Play">
+              <title>Play</title>
+              <circle cx="12" cy="12" r="11" fill="#1DB954" />
+              <polygon points="9,7 9,17 17,12" fill="#000000" />
+            </svg>
+          </div>
+          <img src="img/fakira.jpeg" alt="happy mood">
+          <h2>Happy Hits!</h2>
+          <p>A romantic vibe filled with warmth!</p>
+        </div>
+        <div data-folder="Haan_ke_ha" class="card">
+          <div class="play">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" role="img"
+              aria-label="Play">
+              <title>Play</title>
+              <circle cx="12" cy="12" r="11" fill="#1DB954" />
+              <polygon points="9,7 9,17 17,12" fill="#000000" />
+            </svg>
+          </div>
+          <img src="img/haan.png" alt="happy mood">
+          <h2>Happy Hits!</h2>
+          <p>Emotional melodies wrapped in nostalgia!</p>
+        </div>
+        <div data-folder="jagarafiya" class="card">
+          <div class="play">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" role="img"
+              aria-label="Play">
+              <title>Play</title>
+              <circle cx="12" cy="12" r="11" fill="#1DB954" />
+              <polygon points="9,7 9,17 17,12" fill="#000000" />
+            </svg>
+          </div>
+          <img src="img/juga.jpeg" alt="happy mood">
+          <h2>Happy Hits!</h2>
+          <p>A sweet love-driven tune for every mood!</p>
+        </div>
+      </div>
+
+      <h2>Popular Albums And Singles</h2>
+      <div class="cardcontainer">
+
+        <div data-folder="Happy_Songs" class="card">
+          <div class="play">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" role="img"
+              aria-label="Play">
+              <title>Play</title>
+              <circle cx="12" cy="12" r="11" fill="#1DB954" />
+              <polygon points="9,7 9,17 17,12" fill="#000000" />
+            </svg>
+          </div>
+          <img src="img/happy.webp" alt="happy mood">
+          <h2>Happy Songs</h2>
+          <p>Hits to boost your mood and fill you with happiness!</p>
+        </div>
+
+        <div data-folder="Sad_Songs" class="card">
+          <div class="play">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" role="img"
+              aria-label="Play">
+              <title>Play</title>
+              <circle cx="12" cy="12" r="11" fill="#1DB954" />
+              <polygon points="9,7 9,17 17,12" fill="#000000" />
+            </svg>
+          </div>
+          <img src="img/sad.jpeg" alt="happy mood">
+          <h2>Sad Songs</h2>
+          <p>Emotional melodies for the moments that need it!</p>
+        </div>
+
+        <div data-folder="Romantic_songs" class="card">
+          <div class="play">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" role="img"
+              aria-label="Play">
+              <title>Play</title>
+              <circle cx="12" cy="12" r="11" fill="#1DB954" />
+              <polygon points="9,7 9,17 17,12" fill="#000000" />
+            </svg>
+          </div>
+          <img src="img/love.jpeg" alt="happy mood">
+          <h2>Love Songs</h2>
+          <p>Romantic vibes for hearts in love!</p>
+        </div>
+
+        <div data-folder="90s_Songs" class="card">
+          <div class="play">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" role="img"
+              aria-label="Play">
+              <title>Play</title>
+              <circle cx="12" cy="12" r="11" fill="#1DB954" />
+              <polygon points="9,7 9,17 17,12" fill="#000000" />
+            </svg>
+          </div>
+          <img src="img/90sson.jpg" alt="happy mood">
+          <h2>90s Songs</h2>
+          <p>Timeless classics from the golden era!</p>
+        </div>
+
+      </div>
+
+      <div class="playbar">
+
+        <div class="seekbar">
+          <div class="circle">
+
+          </div>
+        </div>
+        <div class="abovebar">
+
+          <div class="songinfo">
+
+          </div>
+
+          <div class="songsbutton">
+            <img width="35" id="pre" src="img/pre.svg" alt="prevsongs">
+            <img width="35" id="play" src="img/play.svg" alt="play">
+            <img width="35" id="next" src="img/next.svg" alt="nextsongs">
+          </div>
+          <div class="time_vol">
+            <div class="songtime">
+            </div>
+            <div class="vol">
+              <img width="25" src="img/vol_h.svg" alt="">
+              <div class="range">
+                <input type="range" name="vol" id="">
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- footer right div -->
+    <footer class="spotify-footer">
+
+      <div class="footer-columns">
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="#">About</a>
+          <a href="#">Jobs</a>
+          <a href="#">For the Record</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Communities</h4>
+          <a href="#">For Artists</a>
+          <a href="#">Developers</a>
+          <a href="#">Advertising</a>
+          <a href="#">Investors</a>
+          <a href="#">Vendors</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Useful links</h4>
+          <a href="#">Support</a>
+          <a href="#">Free Mobile App</a>
+          <a href="#">Popular by Country</a>
+          <a href="#">Import your music</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Spotify Plans</h4>
+          <a href="#">Premium Lite</a>
+          <a href="#">Premium Standard</a>
+          <a href="#">Premium Platinum</a>
+          <a href="#">Premium Student</a>
+          <a href="#">Spotify Free</a>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        © 2025 Spotify AB
+      </div>
+
+    </footer>
+  </div>
+
+  </div>
+
+  <script src="spotify.js"></script>
+</body>
+
+</html>

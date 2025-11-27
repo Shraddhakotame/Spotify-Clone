@@ -13,27 +13,39 @@ Now I’m polishing the UI further and adding more interactive features. 🚀�
 ✅ Completed Features
 
 -Desktop UI with Spotify-like layout
+
 -Functional music player: Play / Pause / Next / Previous
+
 -Seekbar + current time & duration
+
 -Volume control & mute
+
 -Song list loaded dynamically
+
 -Playlist rendering from folder
+
 -Hover effects & clean dark theme
+
 -SVG icons for controls + UI elements
+
 
 ✅ In Progress / Planned (WIP)
 
 -Making layout responsive for mobile and tablet (currently desktop-only layout)
+
 -Ensure UI works well on different screen sizes (mobile, tablet)
+
 -Adaptive grid or flex layout for playlist and main container
+
 -UI polish: fluid width/height, responsive icons & images, maintain aspect ratio
+
 -Possibly add more interactive features (e.g. dynamic playlist management, touch controls)
 
 🛠️ Tech Stack
 
-HTML
-CSS
-JavaScript
+-HTML
+-CSS
+-JavaScript
 
 📁 Folder Structure
 Spotify-Clone
